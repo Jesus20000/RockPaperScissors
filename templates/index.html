@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <style>
+        body {
+            background-image: url("{{ url_for('static', filename='background.jpg') }}");
+            background-size: cover; /* Adjust this as needed */
+            background-position: center;
+            background-attachment: fixed;
+            color: white; /* Ensures text is visible over the background */
+            font-family: Arial, sans-serif;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px;
+        }
+        img {
+            width: 150px; /* Adjust size as needed */
+        }
+        form {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Rock Paper Scissors Game</h1>
+
+    <div class="image-container">
+        <h2>Your Choice</h2>
+        <img src="{{ url_for('static', filename=player_image) }}" alt="Player Choice">
+    </div>
+
+    <div class="image-container">
+        <h2>Computer's Choice</h2>
+        <img src="{{ url_for('static', filename=computer_image) }}" alt="Computer Choice">
+    </div>
+
+    <h2>Result: {{ result }}</h2>
+
+    <form action="/" method="post">
+        <label for="choice">Choose Rock, Paper, or Scissors:</label>
+        <select name="choice" id="choice">
+            <option value="rock">Rock</option>
+            <option value="paper">Paper</option>
+            <option value="scissors">Scissors</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
