@@ -1,10 +1,20 @@
 # Rock Paper Scissors Game
 
-Welcome to the Rock Paper Scissors game! This is a simple web-based game built with Flask.
+Welcome to the Rock Paper Scissors game! This is a simple web-based game built using Flask. The game allows you to play Rock Paper Scissors against the computer with a graphical user interface.
+
+## Features
+
+- Interactive game
+- Custom design with images and background
+
+## Screenshots
+
+![Game Screenshot](static/background.jpeg)  
+*Note: Replace with an actual screenshot of your game if available.*
 
 ## Getting Started
 
-Follow these steps to run the game on your local machine:
+To run this game on your local machine, follow these steps:
 
 ### Prerequisites
 
